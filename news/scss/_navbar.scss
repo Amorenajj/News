@@ -1,0 +1,17 @@
+.navbar {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    
+    &-brand {
+        font-weight: bold;
+        color: var(--color-primario) !important;
+    }
+    
+    .nav-link {
+        color: var(--color-oscuro) !important;
+        transition: color 0.3s ease;
+        
+        &:hover {
+            color: var(--color-primario) !important;
+        }
+    }
+}

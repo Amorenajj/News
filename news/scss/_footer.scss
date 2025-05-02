@@ -1,0 +1,18 @@
+.footer {
+    background-color: var(--color-claro);
+    
+    h5 {
+        color: var(--color-secundario);
+        margin-bottom: 1.5rem;
+    }
+    
+    a {
+        color: var(--color-oscuro);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        
+        &:hover {
+            color: var(--color-primario);
+        }
+    }
+}
