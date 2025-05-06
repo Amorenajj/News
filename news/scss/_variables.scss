@@ -1,0 +1,15 @@
+// Variables globales
+:root {
+    --color-primario: #e74c3c;
+    --color-secundario: #2c3e50;
+    --color-claro: #f4f4f4;
+    --color-oscuro: #333333;
+    --color-blanco: #ffffff;
+}
+
+// Estilos generales
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--color-oscuro);
+}
