@@ -1,17 +1,19 @@
 .navbar {
+    background-color: var(--color-blanco);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    
+    padding: $spacing-md 0;
+
     &-brand {
+        color: var(--color-primario);
         font-weight: bold;
-        color: var(--color-primario) !important;
     }
-    
+
     .nav-link {
-        color: var(--color-oscuro) !important;
+        color: var(--color-oscuro);
         transition: color 0.3s ease;
-        
+
         &:hover {
-            color: var(--color-primario) !important;
+            color: var(--color-primario);
         }
     }
-}
+} 

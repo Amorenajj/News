@@ -1,8 +1,48 @@
 // Importación de archivos parciales
-@import "_variables";
-@import "_navbar";
-@import "_hero";
-@import "_tarjetas";
-@import "_grilla";
-@import "_footer";
-@import "_mediaqueries";
+@import "variables";
+@import "navbar";
+@import "hero";
+@import "tarjetas";
+@import "grilla";
+@import "footer";
+@import "mediaqueries";
+
+// Estilos base
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--color-oscuro);
+    background-color: var(--color-blanco);
+}
+
+// Reset básico
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Reset de enlaces
+a {
+    text-decoration: none;
+    color: inherit;
+    
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+// Reset de listas
+ul, ol {
+    list-style: none;
+}
+
+// Reset de imágenes
+img {
+    max-width: 100%;
+    height: auto;
+} 

@@ -1,20 +1,15 @@
 .hero {
     background-color: var(--color-claro);
-    padding: 4rem 0;
-    
-    h1 {
-        font-size: 2.5rem;
-        margin-bottom: 1.5rem;
+    padding: $spacing-xl 0;
+    text-align: center;
+
+    &-title {
+        color: var(--color-primario);
+        margin-bottom: $spacing-md;
+    }
+
+    &-text {
         color: var(--color-oscuro);
+        margin-bottom: $spacing-lg;
     }
-    
-    .lead {
-        font-size: 1.25rem;
-        color: var(--color-secundario);
-        margin-bottom: 2rem;
-    }
-    
-    &-buttons {
-        margin-top: 2rem;
-    }
-}
+} 

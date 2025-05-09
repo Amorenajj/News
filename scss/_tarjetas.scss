@@ -1,39 +1,19 @@
-.feature-card {
-    padding: 2rem;
-    border-radius: 8px;
+.card {
+    border: none;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    text-decoration: none;
-    
+    margin-bottom: $spacing-md;
+
     &:hover {
         transform: translateY(-5px);
     }
-    
-    h3 {
-        color: var(--color-primario);
-        margin-bottom: 1rem;
-    }
-}
 
-// Botones
-.btn {
-    &-primary {
-        background-color: var(--color-primario);
-        border-color: var(--color-primario);
-        
-        &:hover {
-            background-color: #c0392b;
-            border-color: #c0392b;
-        }
-    }
-    
-    &-outline-primary {
+    &-title {
         color: var(--color-primario);
-        border-color: var(--color-primario);
-        
-        &:hover {
-            background-color: var(--color-primario);
-            border-color: var(--color-primario);
-        }
+        margin-bottom: $spacing-sm;
     }
-}
+
+    &-text {
+        color: var(--color-oscuro);
+    }
+} 

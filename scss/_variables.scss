@@ -7,9 +7,20 @@
     --color-blanco: #ffffff;
 }
 
-// Estilos generales
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: var(--color-oscuro);
-}
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Espaciado
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+
+// Tipografía
+$font-family-base: 'Arial', sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6; 

@@ -1,25 +1,15 @@
-.padre {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin-top: 40px;
+.container {
+    padding: $spacing-md;
 }
 
-.items {
-    background: #f8f9fa;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    
-    iframe {
-        width: 100%;
-        aspect-ratio: 16/9;
-        border-radius: 4px;
-        margin-bottom: 10px;
-    }
-    
-    h4 {
-        margin: 10px 0;
-        font-size: 1.1rem;
-    }
+.row {
+    margin: 0 -$spacing-sm;
 }
+
+.col {
+    padding: $spacing-sm;
+}
+
+.section {
+    padding: $spacing-xl 0;
+} 
