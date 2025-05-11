@@ -1,50 +1,146 @@
-/* Este archivo será generado automáticamente por la compilación de SCSS */
-
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Variables globales */
 :root {
-    --color-primario: #e74c3c;
-    --color-secundario: #2c3e50;
-    --color-claro: #f4f4f4;
-    --color-oscuro: #333333;
-    --color-blanco: #ffffff;
+  --color-primario: #e74c3c;
+  --color-secundario: #2c3e50;
+  --color-claro: #f4f4f4;
+  --color-oscuro: #333333;
+  --color-blanco: #ffffff;
 }
 
-/* Estilos base */
+.navbar {
+  background-color: var(--color-blanco);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+}
+.navbar-brand {
+  color: var(--color-primario);
+  font-weight: bold;
+}
+.navbar .nav-link {
+  color: var(--color-oscuro);
+  transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+  color: var(--color-primario);
+}
+
+.hero {
+  background-color: var(--color-claro);
+  padding: 2rem 0;
+  text-align: center;
+}
+.hero-title {
+  color: var(--color-primario);
+  margin-bottom: 1rem;
+}
+.hero-text {
+  color: var(--color-oscuro);
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 1rem;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card-title {
+  color: var(--color-primario);
+  margin-bottom: 0.5rem;
+}
+.card-text {
+  color: var(--color-oscuro);
+}
+
+.container {
+  padding: 1rem;
+}
+
+.row {
+  margin: -0.5rem;
+}
+
+.col {
+  padding: 0.5rem;
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+.footer {
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+.footer-title {
+  color: var(--color-blanco);
+  margin-bottom: 1rem;
+}
+.footer-link {
+  color: var(--color-claro);
+  transition: color 0.3s ease;
+}
+.footer-link:hover {
+  color: var(--color-primario);
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0.5rem;
+  }
+  .hero {
+    padding: 1.5rem 0;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 0;
+  }
+  .section {
+    padding: 1.5rem 0;
+  }
+}
+@media (max-width: 992px) {
+  .footer {
+    text-align: center;
+  }
+}
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: var(--color-oscuro);
-    background-color: var(--color-blanco);
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: var(--color-oscuro);
+  background-color: var(--color-blanco);
 }
 
-/* Reset de enlaces */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
-
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-/* Reset de listas */
 ul, ol {
-    list-style: none;
+  list-style: none;
 }
 
-/* Reset de imágenes */
 img {
-    max-width: 100%;
-    height: auto;
-} 
+  max-width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=styles.css.map */
