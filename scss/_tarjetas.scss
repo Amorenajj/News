@@ -16,4 +16,37 @@
     &-text {
         color: var(--color-oscuro);
     }
+}
+
+// Estilo personalizado para las tarjetas del home
+.feature-card {
+  display: block;
+  background: var(--color-blanco);
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(44,62,80,0.08);
+  padding: 2rem 1.5rem;
+  margin-bottom: $spacing-lg;
+  transition: box-shadow 0.2s, transform 0.2s;
+  color: var(--color-oscuro);
+  border: 1px solid var(--color-claro);
+  text-align: left;
+
+  h3 {
+    color: var(--color-primario);
+    margin-bottom: $spacing-sm;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  p {
+    color: var(--color-secundario);
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    box-shadow: 0 8px 32px rgba(44,62,80,0.15);
+    transform: translateY(-6px) scale(1.03);
+    text-decoration: none;
+  }
 } 
