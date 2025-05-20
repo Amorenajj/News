@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Academia de Español</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <!-- Inicio de sesion -->
+  <form id="loginForm">
+    <h2>Iniciar Sesión</h2>
+    <input type="text" id="loginUsername" placeholder="Usuario" required>
+    <input type="password" id="loginPassword" placeholder="Contraseña" required>
+    <button type="submit">Ingresar</button>
+  </form>
+
+  <!-- Registro -->
+  <form id="registerForm">
+    <h2>Registrarse</h2>
+    <input type="text" id="registerUsername" placeholder="Usuario" required>
+    <input type="email" id="registerEmail" placeholder="Email" required>
+    <input type="password" id="registerPassword" placeholder="Contraseña" required>
+    <button type="submit">Registrar</button>
+  </form>
+
+  <!-- Usuarios -->
+  <section id="userSection" style="display: none;">
+    <h2 id="welcomeMessage"></h2>
+    <button id="logoutBtn">Cerrar Sesión</button>
+
+    <!-- Formulario de Consultas -->
+    <form id="queryForm">
+      <h3>Envía tu consulta</h3>
+      <input type="text" id="queryName" placeholder="Tu nombre" required>
+      <select id="queryTopic" required>
+        <option value="Gramática">Gramática</option>
+        <option value="Vocabulario">Vocabulario</option>
+      </select>
+      <textarea id="queryQuestion" placeholder="Tu consulta" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Lista de Consultas -->
+    <div id="queriesList"></div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
